@@ -1,0 +1,970 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;800&family=Pacifico&family=Spectral:ital,wght@0,300;0,500;1,800&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: .3s ease-in-out;
+}
+html{
+    font-size: 62.2%;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Spectral', serif;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+     padding: 0.5%;
+}
+a{
+    text-decoration: none;
+}
+/*========================CORNELIA====================================*/
+.cornelia{
+    width: 100%; 
+    height: 90rem; /*************/
+    margin-bottom: -6rem;
+}
+.cornelia_nav{
+    display: flex;
+    align-items: center;
+    padding: 2rem 8.6rem; 
+}
+.cornelia_logo{
+   width: 20%;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 2.6rem;
+   line-height: 3.1rem;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   text-align: center;
+   color: #0B4141;
+}
+.cornelia_list{
+    display: inline-flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+}
+.cornelia_list a{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin: 2rem 2rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #0B4141;
+}
+.cornelia_button{
+    width: 16.3rem;
+    height: 4.6rem;
+    background: #0B4141;
+    border-radius: 124px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: #ffccbc;
+}
+.cornelia_text_frame{
+   max-width: 74.7rem;
+   margin: 0 auto;
+   position: relative;
+}
+.cornelia_h1{
+   font-weight: 900;
+   font-size: 13rem;
+   line-height: 13rem;
+   text-align: center;
+   color: #FFCCBC;
+   letter-spacing: 0.3rem;
+   position: relative;
+   z-index: 1;
+}
+.main_horse{
+    max-width: 1000px;
+    position: absolute;
+    z-index: 2;
+    right: -6rem;
+    top: 15rem;
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+}
+.cornelia_text_black{
+
+   position: absolute;
+   z-index: 3;
+   left: 20rem;
+   top: 25rem;
+   font-weight: normal;
+   font-size: 12rem;
+   line-height: 12.8rem;
+   letter-spacing: 0.3rem;
+   color: #0b4141;
+   display: flex;
+   align-items: flex-end;
+   text-align: center;
+}
+/* ================================ TOWARD ============================================*/
+.toward{
+    width: 100%;
+    height: auto;
+    background: #ffccbc;
+   padding-right: 0;
+   padding-bottom: 0;
+}
+.toward_wrapper{
+    width: 100%;
+    background-image: url('../img/small_horses.png');
+    min-height: 76vh;
+}
+.toward_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 5% 0 5% 0;
+    width: 50%;
+}
+.toward_text_h1{
+   font-weight: 900;
+   font-size: 9em; /*8rem*/
+   line-height: 1em; /*9.6*rem*/
+   text-align: center;
+   color: #FFFFFF;
+   margin: 2.4% 0;
+}
+.toward_text_p{
+   font-weight: 500;
+   font-size: 2.4rem;
+   line-height: 3.2rem;
+   text-align: center;
+   color: #FFFFFF;
+   margin: 2.4% 0;
+   margin-bottom: 0;
+}
+/* ==================================== CHOOSE ===========================================*/
+.choose{
+   width: 100%;
+   min-height: 92vh;
+   background: #0B4141;
+   margin-bottom: 4rem;
+}
+.choose_wrapper{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.choose_text{
+    width: 38%;
+    padding: 8.5% 0 4% 9%;
+}
+.choose_text_h1{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 6.9em;
+    line-height: 1em;
+    color: #FFCCBC;
+    margin: 3.2% 0px;
+}
+.choose_text_p{
+    font-weight: normal;
+    font-size: 2.7em;
+    line-height: 1.2em;
+    color: #FFCCBC;
+    margin: 8% 0px;
+}
+.choose_text_btn{
+   width: 250px;
+   height: 50px;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 25px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   color: #FFCCBC;
+   margin: 0px 10px;
+   border: 2px solid #FFCCBC;
+   border-radius: 100px;
+   padding: 0 10px 0 10px;
+}
+.choose_img{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: -16rem;
+    right: 1rem;
+    overflow: hidden;
+}
+.choose_img img{
+    width: 100%;
+}
+/* ================================ ALWAYS ==================================== */
+.always_premium{
+    max-width: 100%;
+    height: auto;
+    padding: 0% 8%;
+}
+.always, .premium{
+    display: flex;
+    justify-content: space-evenly;
+}
+.always_img, .premium_img{
+    min-width: 60%;
+    margin: 0 auto;
+}
+.always_img img{
+    width: 70%;
+}
+.premium_img img{
+    width: 70%;
+}
+.always_text, .premium_text{
+   width: 38%;
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+}
+.always_text_h3, .premium_text_h3{
+    font-weight: 900;
+    font-size: 6.8em;
+    line-height: 1em;
+    color: #FFCCBC; 
+    margin: 3.2% 0;
+}
+.always_text_p, .premium_text_p{
+   font-weight: normal;
+   font-size: 2.4em;
+   line-height: 1.5em;
+   color: #0B4141;
+   margin: 3.3%;
+}
+.always_text_p2 span{
+   padding: 2% 
+}
+.always_text_p2{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 2.4em;
+    line-height: 1.5em;
+    color: #0B4141;
+    margin: 0 1.6%;
+}
+/* ========================================= PREMIUM ===============================*/
+.premium{
+    padding-top: 5%;
+}
+.premium_text_h3{
+    color: #0B4141;
+}
+.premium_img{
+    display: flex;
+    justify-content: right;
+}
+
+/* =========================================== LET =================================*/
+.let{
+    width: 100%;
+    min-height: 80vh;
+    background: rgba(245, 245, 245, 0.6); 
+    padding-top: 6%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -0.5%;
+}
+.let_texts{
+    width: 50%;
+    margin: 0 auto;
+}
+.let_text_h3{
+    font-weight: normal;
+    font-size: 8em;
+    line-height: 1em;
+    text-align: center;
+    color: #FFCCBC;
+    margin: 2.4% 0;
+}
+.let_text_p1, .let_text_p2{   
+    font-weight: normal;
+    font-size: 2.6em;
+    line-height: 1.3em;
+    text-align: center;
+    color: #0B4141;
+    margin: 2.4 0;
+}
+.let_text_p2 span{
+    font-weight: bold;
+}
+.horses_herd img{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+.horses_herd img:hover{
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+  }
+  @-webkit-keyframes flash {
+    0% {
+      opacity: .4;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes flash {
+    0% {
+      opacity: .4;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+/* =================================================== THEY =========================*/
+.they{
+    max-width: 100%;
+    min-height: 125vh;
+    background-image: url('../img/vec_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4%;
+}
+.they_img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5%;
+    width: 80%;
+    margin: 1% auto;
+    
+}
+.they_text{
+    font-weight: 900;
+    font-size: 6.8em;
+    line-height: 1em;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+.they_img_inner{
+    width: 30.04rem;
+    height: auto;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.8);
+    font-weight: normal;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: #0B4141;
+    margin: 1.6rem;
+    padding-top: 0;
+    padding: 2rem;
+}
+.they_img_main1, .they_img_main2, .they_img_main3{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc((100% / 3) - 2rem);
+    align-items: center;
+}
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8,  .card9, .card10{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc((100% / 3) - 2rem);
+}
+.card1 p, .card2 p, .card3 p, .card4 p, .card5 p, .card6 p, .card7 p,
+.card8 p, .card9 p, .card10 p {
+    padding-bottom: 0.4rem;
+}
+.ph_tx1, .ph_tx2, .ph_tx3, .ph_tx4, .ph_tx5, .ph_tx6, .ph_tx7, .ph_tx8,.ph_tx9, .ph_tx10 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.ph_tx1 img, .ph_tx2 img, .ph_tx3 img, .ph_tx4 img, .ph_tx5 img, .ph_tx6 img,
+.ph_tx7 img, .ph_tx8 img, .ph_tx9 img, .ph_tx10 img{
+    padding: 3px;
+}
+.they_horse{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.they_horse img{
+    position: absolute;
+    top: 2rem;
+    right: 50rem;
+    transition: 2s;
+}
+.they_horse img:hover{
+    position: absolute;
+    background:  #eedfda;
+    top: 4rem;
+    right: 70rem;
+    transition-timing-function: ease-in-out;
+}
+/* =========================================== EACH =================================*/
+.each{
+    width: 100%;
+    max-height: 90vh;
+    background: url('../img/confettis2.png');
+    display: flex;
+    justify-content: center;
+}
+.each_img{
+    width: 45%;
+}
+.each_text{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    padding: 1%;
+    padding-top: 10%;
+}
+.each_text_h4{
+     font-weight: 900;
+    font-size: 6.8em;
+    line-height: 1.2em;
+    color: #0B4141;
+    text-align: left;
+}
+.each_text_p{
+    font-weight: normal;
+    font-size: 2.4em;
+    line-height: 1.2em;
+    color: #0B4141;
+    text-align: left;
+    padding: 3% 0 3% 0;
+}
+.each_button, .unicorn_button{
+    width: 225px;
+    height: 54px;
+    border: 2px solid #0b4141;
+    border-radius: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #0B4141;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+/* ================================= UNICORN =========================================*/
+.unicorn{
+    width: 100%;
+    min-height: 75vh;
+}    
+.unicorn_wrapper{
+    background: url('../img/Light.png') bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.unicorn_text{
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    padding: 7% 0 5% 8%;
+}
+.unicorn_text_img{
+    align-items: center;
+    width: 118px;
+    height: 118px;
+    margin: 0 auto;
+}
+.unicorn_text_h4{  
+    font-weight: 900;
+    font-size: 6.8em;
+    line-height: 1.3em;
+    color: #0B4141;
+    text-align: left;
+}
+.unicorn_text_p{
+    font-weight: normal;
+    font-size: 2.5em;
+    line-height: 1.3em;
+    color: #0B4141;
+    text-align: left;
+    padding: 6% 0 6% 0;
+}
+.unicorn_img{
+    width: 60%;
+    margin: 0 auto;
+}
+.unicorn_img img{
+    width: 100%;
+}
+/* ================================================ GET ============================ */
+.get{
+    background: #0B4141;
+    max-height: auto;
+    padding-top: 5.5rem;
+}
+.get_h_btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.get_h5{
+    max-width: 60%;
+    font-weight: bold;
+    font-size: 8em;
+    line-height: 1.3em;
+    text-align: center;
+    color: #FFCCBC;
+    margin: 4% 0;
+}
+.get_buttons{
+    display: flex;
+    justify-content: center;
+}
+.get_button{
+    width: 200px;
+    height: 82px;
+    border: 2px solid #ffccbc;
+    border-bottom: none;
+    border-radius: 250px;
+ 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffccbc;
+    margin: 1rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.get_button span{
+    font-weight: 600;
+}
+.get_button img{
+     margin: 2px;
+     padding: 2px;
+}
+.get_design{
+    width: 100%;
+    max-height: 5rem;
+    background-color: #0B4141;
+    color: #ffccbc;
+    text-align: left;
+    padding: 7rem;
+    padding-bottom: 13rem;
+}
+.get_design span{
+     font-weight: 900;
+     font-size: 20px;
+     line-height: 24px;
+}
+.get_design p{
+    font-size: 16px;
+    line-height: 22px;
+}
+
+@media screen and (max-width: 1420px){
+    .choose_text{
+        width: 60%;
+        margin: 5% auto;
+    }
+    .choose_text_h1,  .choose_text_p{
+        text-align: center;
+    }
+    .choose_text_btn{
+        margin: 0 auto;
+    }
+    .choose_img{
+        display: none;
+    }
+    .they{
+        height: auto;
+        padding: 1%;
+        margin: 0;
+    }
+    .they_img{
+        display: flex;
+        margin: 5%;
+        width: 90%;
+     }
+   
+}
+@media screen and (max-width: 1024px){
+    .cornelia{
+        width: 100%;
+        max-height: 88vh;
+    }
+    .cornelia_wrapper{
+        width: 100%;
+    }
+    .choose_text{ 
+        width: 55%;
+        margin: 0 auto;
+        padding: 5%;
+    }
+    .cornelia_text_frame{
+        max-width: 50rem;
+        margin: 0 auto;
+        position: relative;
+     }
+    .cornelia_h1{
+        font-weight: 900;
+        font-size: 7rem;
+        line-height: 7rem;
+        text-align: center;
+        color: #FFCCBC;
+        letter-spacing: 0.3rem;
+        position: relative;
+        z-index: 1;
+        padding: 2% 0 3% 0;
+     }
+     .main_horse img{
+         width: 100rem;
+     }
+     .main_horse{
+        max-width: 70rem;
+        position: absolute;
+        z-index: 2;
+        right: -5rem;
+        top: 10rem;
+    }
+    .cornelia_text_black{
+        position: absolute;
+        z-index: 3;
+        left: 22rem;
+        top: 20rem;
+        font-weight: normal;
+        font-size: 7rem;
+        line-height: 7rem;
+        letter-spacing: 0.3rem;
+        color: #0b4141;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+     }
+    .choose_text_h1,  .choose_text_p{
+        text-align: center;
+    }
+    .choose_text_btn{
+        margin: 0 auto;
+    }
+    .choose_img{
+       display: none; 
+    }
+    .always, .premium{
+        display: block;
+    }
+    .always_img, .premium_img, .each_text{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .always_text, .premium_text{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+     }
+     .always_text_h3, .premium_text_h3{
+         text-align: center;
+     } 
+     .they{
+        height: auto;
+    }
+    .they_img{
+        display: flex;
+        margin: 2rem auto;
+     }
+     .they_img_main1, .they_img_main2{
+         width: 40%;
+         display: flex;
+         justify-content: center;
+     }
+     .each{
+        max-height: 140rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .each_img{
+        width: 40%;
+        margin: 0 auto;
+    }
+    .each_text{
+        width: 50%;
+        margin: 0 auto; 
+    }
+    .unicorn{
+        max-height: 130rem;
+        }
+        .unicorn_wrapper{
+            display: block;
+            max-height: 130rem;
+        }
+        .unicorn_text{
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .unicorn_text_h4, .unicorn_text_p{
+            text-align: center;
+        }
+        .unicorn_img{
+            width: 90%;
+            margin: 0 auto;
+        }
+}
+@media screen and (max-width: 767px){ 
+    .cornelia{
+        width: 100%;
+        max-height: 90vh;
+    }
+    .cornelia_wrapper{
+        width: 100%;
+    }
+    .cornelia_nav{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    } 
+    .cornelia_logo{
+        width: 100%;
+        font-size: 2.6rem;
+        line-height: 3.1rem;
+        display: flex;
+        justify-content: center;
+    }
+    .cornelia_list{
+        display: inline-flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        list-style-type: none;
+        width: 100%;
+        padding-bottom: 3%;
+    }
+    .cornelia_text_frame{
+        max-width: 50rem;
+        margin: 0 auto;
+        position: relative;
+     }
+    .cornelia_h1{
+        font-weight: 900;
+        font-size: 7rem;
+        line-height: 7rem;
+        text-align: center;
+        color: #FFCCBC;
+        letter-spacing: 0.3rem;
+        position: relative;
+        z-index: 1;
+        padding: 2% 0 3% 0;
+     }
+     .main_horse img{
+         width: 75rem;
+     }
+     .main_horse{
+        max-width: 70rem;
+        position: absolute;
+        z-index: 2;
+        right: -10rem;
+        top: 10rem;
+    }
+    .cornelia_text_black{
+        position: absolute;
+        z-index: 3;
+        left: 18rem;
+        top: 18rem;
+        font-weight: normal;
+        font-size: 7rem;
+        line-height: 7rem;
+        letter-spacing: 0.3rem;
+        color: #0b4141;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+     }
+    
+    .toward_wrapper, .choose_wrapper{
+        width: 100%;
+    }
+    .toward_text_h1,  .choose_text_h1, .let_text_h3{
+       font-size: 5.5em;
+       line-height: 1.3em;
+    }
+    .always, .premium{
+        display: block;
+    }
+    .always_img, .premium_img, .each_text{
+        width: 70%;
+        margin: 0 auto;
+    }
+     .always, .premium{
+        display: flex;
+        flex-direction: column;
+    }
+    .always_text, .premium_text{
+        width: 85%;
+        text-align: center;
+     }
+     .they{
+        height: auto;
+        width: 100%;
+    }
+    .they_img{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem auto;
+     }
+     .they_img_main1, .they_img_main2, .they_img_main3{
+         width: 80%;
+         display: block;
+         margin: 0 auto;
+     }
+     .each_img{
+        display: none;
+     }
+    .unicorn{
+        max-height: 130rem;
+        }
+        .unicorn_wrapper{
+            display: block;
+            max-height: 130rem;
+        }
+        .unicorn_text{
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .unicorn_text_h4, .unicorn_text_p{
+            text-align: center;
+        }
+        .unicorn_img{
+            width: 90%;
+            margin: 0 auto;
+        }
+}
+@media screen and (max-width: 426px){
+    .container{
+        width: 100%;
+    }
+    .cornelia{
+        width: 100%;
+        min-height: 15vh;
+    }
+    .cornelia_wrapper{
+        width: 100%;
+    }
+    .cornelia_nav{
+        display: flex;
+        flex-direction: column;
+        margin:  0 auto;
+    } 
+    .cornelia_logo{
+         width: 100%;
+         font-size: 2.6rem;
+         line-height: 3.1rem;
+         display: flex;
+       justify-content: center;
+    }
+    .cornelia_list{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    } 
+    .cornelia_h1{
+        font-weight: 900;
+        font-size: 5rem;
+        line-height: 5rem;
+        text-align: center;
+        color: #FFCCBC;
+        letter-spacing: 0.3rem;
+        position: relative;
+        z-index: 1;
+     }
+     .main_horse{
+       display: none;
+     }
+     .cornelia_text_black{
+         position: absolute;
+         z-index: 3;
+         left: 13rem;
+         top: 13rem;
+         font-weight: normal;
+         font-size: 5rem;
+         line-height: 5rem;
+         letter-spacing: 0.3rem;
+         color: #0b4141;
+         display: flex;
+        
+         text-align: center;
+      }
+    .toward_text_h1, .choose_text_h1{
+        font-size: 4rem;
+    }
+    .toward_text_p, .choose_text_p{
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+    .always_img, .premium_img{
+        display: none;
+    }
+     .each_img{
+        display: none;
+    }
+    .each_text_h4, .each_text_p{
+        text-align: center
+    }
+    .they{
+        height: auto;
+        width: 100%;
+    }
+    .they_img{
+        margin: 5%;
+     }
+     .they_img_main1, .they_img_main2, .they_img_main3{
+         width: 90%;
+         display: block;
+         margin: 0 auto;
+     }
+     .each{
+         padding-bottom: 3rem;
+     }
+    .unicorn_wrapper{
+        background: url('../img/Light.png') bottom right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+  .unicorn_text, .unicorn_text_p{
+      text-align: center;
+  }
+    .get_h5{
+        font-size: 5em;
+        line-height: 1em; 
+    }
+    .get_buttons{
+        padding-top: 2%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+    
