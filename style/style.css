@@ -265,6 +265,9 @@ a{
 .premium_img{
     display: flex;
     justify-content: right;
+    height: auto;
+    width: 100%;
+    max-width: 700px;
 }
 
 /* =========================================== LET =================================*/
@@ -275,7 +278,7 @@ a{
     padding-top: 6%;
     display: flex;
     flex-direction: column;
-    margin-bottom: -0.5%;
+    margin-bottom: -1%;
 }
 .let_texts{
     width: 50%;
@@ -334,23 +337,24 @@ a{
     background-image: url('../img/vec_bg.png');
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 4%;
+  
+}
+
+.they_text{
+    font-weight: 900;
+    font-size: 7em;
+    line-height: 1.3em;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 1%;
 }
 .they_img{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1.5%;
-    width: 80%;
+    gap: 0.8%;
+    width: 65%;
     margin: 1% auto;
-}
-.they_text{
-    font-weight: 900;
-    font-size: 6.8em;
-    line-height: 1em;
-    text-align: center;
-    color: #FFFFFF;
-    margin: 0 auto;
 }
 .they_img_inner{
     width: 30.04rem;
@@ -366,7 +370,7 @@ a{
     padding: 2rem;
 }
 .they_img_main1, .they_img_main2, .they_img_main3{
-    width: 30%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     flex: 1 1 calc((100% / 3) - 2rem);
@@ -400,13 +404,18 @@ a{
     top: 2rem;
     right: 50rem;
     transition: 2s;
+    
+    width: 295px;
+    height: 295px;
+    border-radius: 50%;
 }
 .they_horse img:hover{
     position: absolute;
-    background:  #eedfda;
+    background:  #FfCCBC;
     top: 4rem;
     right: 70rem;
     transition-timing-function: ease-in-out;
+   
 }
 /* =========================================== EACH =================================*/
 .each{
@@ -584,6 +593,10 @@ a{
     .choose_img{
         display: none;
     }
+    .let{
+        min-height: 70vh;
+        margin-bottom: -2%;
+    }
     .they{
         height: auto;
         padding: 1%;
@@ -593,6 +606,10 @@ a{
         display: flex;
         margin: 5%;
         width: 90%;
+     }
+     .each{
+         display: flex;
+         justify-content: space-around;
      }
 }
 @media screen and (max-width: 1024px){
@@ -625,9 +642,8 @@ a{
         height: auto;
         width: 100%;  
         max-width: 1200px;
-        margin-left: 3%;
+        margin-left: 0.3%;
      }
-     
     .choose_text_h1,  .choose_text_p{
         text-align: center;
     }
@@ -653,12 +669,15 @@ a{
      .always_text_h3, .premium_text_h3{
          text-align: center;
      } 
+     .let{
+        margin-bottom: -2.5%;
+    }
      .they{
         height: auto;
     }
     .they_img{
         display: flex;
-        margin: 2rem auto;
+        margin: 2% auto;
      }
      .they_img_main1, .they_img_main2{
          width: 40%;
@@ -669,9 +688,12 @@ a{
         max-height: 140rem;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .each_img{
-        width: 40%;
+        height: auto;
+        width: 100%;
+        max-width: 400px;
         margin: 0 auto;
     }
     .each_text{
@@ -770,19 +792,25 @@ a{
         width: 85%;
         text-align: center;
      }
+     .let{
+         min-height: 50vh;
+     };
      .they{
-        height: auto;
+         margin-top: -5%;
+        min-height: 70vh;
         width: 100%;
     }
     .they_img{
         display: flex;
-        flex-direction: column;
-        margin: 2rem auto;
+        margin: 2% auto;
      }
-     .they_img_main1, .they_img_main2, .they_img_main3{
-         width: 80%;
-         display: block;
-         margin: 0 auto;
+     .they_img_main1, .they_img_main2{
+         width: 40%;
+         display: flex;
+         justify-content: center;
+     }
+     .they_horse img{
+         display: none;
      }
      .each_img{
         display: none;
@@ -793,6 +821,7 @@ a{
         .unicorn_wrapper{
             display: block;
             max-height: 130rem;
+            flex-direction: column;
         }
         .unicorn_text{
             width: 80%;
@@ -805,7 +834,22 @@ a{
         .unicorn_img{
             width: 90%;
             margin: 0 auto;
+            display: block;
         }
+}
+
+@media screen and (max-width: 680px){
+    .they_img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+      }
+      .they_img_main1, .they_img_main2, .they_img_main3{
+          width: 50%;
+          display: block;
+          margin: 0 auto;
+      }
 }
 @media screen and (max-width: 426px){
     .container{
@@ -865,7 +909,6 @@ a{
         align-items: center;
         padding: auto;
         margin: 0 auto;
-        
     }
     .always_img, .premium_img{
         display: none;
@@ -876,17 +919,32 @@ a{
     .each_text_h4, .each_text_p{
         text-align: center
     }
+    .let_text_p1, .let_text_p2{
+        font-weight: 2.2em;
+        line-height: 1.3em;
+    }
     .they{
         height: auto;
         width: 100%;
     }
+    .they_text{
+        font-size: 5em;
+        line-height: 1.2em;
+        text-align: center;
+        margin: 0 auto;
+    }
     .they_img{
-        margin: 5%;
+       margin: 0 auto;
+       width: 90%;
      }
      .they_img_main1, .they_img_main2, .they_img_main3{
          width: 90%;
          display: block;
          margin: 0 auto;
+     }
+
+     .they_horse img{
+         display: none;
      }
      .each{
          padding-bottom: 3rem;
@@ -900,6 +958,9 @@ a{
     }
   .unicorn_text, .unicorn_text_p{
       text-align: center;
+  }
+  .unicorn_img{
+      display: block;
   }
     .get_h5{
         font-size: 5em;
